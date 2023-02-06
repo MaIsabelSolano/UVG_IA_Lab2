@@ -14,12 +14,6 @@ class RB:
         
         df = pd.read_csv(input, sep = "=", header = None)
 
-        for x in df[0]:
-            print(x)
-
-        for x in df[1]:
-            print(x)
-
         for i in range(len(df[0])):
             self.data[
                 self.getEvent(df[0].__getitem__(i))
@@ -28,6 +22,17 @@ class RB:
     def getEvent(self, E):
         E_temp = str(E)
         E_temp = E_temp.replace("P(", "")
-        E_temp = E_temp.replace(")", "")
+        E_temp = E_temp.replace(") ", "")
 
         return E_temp
+
+    def readEvent(self): 
+        0
+
+    def P(self, Event):
+        # Find if self.data has already the query
+        try:
+            return self.data[Event]
+
+        except:
+            print('No existe')
