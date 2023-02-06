@@ -1,2 +1,2 @@
 # UVG_IA_Lab2
-Laboratorio 3 de Inteligencia Artificial
+Laboratorio 2 de Inteligencia Artificial
