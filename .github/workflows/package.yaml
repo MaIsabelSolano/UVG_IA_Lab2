@@ -31,12 +31,13 @@ jobs:
       - name: check build
         run: twine check dist/*
       
-      - name: Publish package to TestPyPI
+      - name: Publish package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: dacb15442
-          password: AMRD123IA
+          password: pypi-AgEIcHlwaS5vcmcCJDVjYTMzYWIwLWVmODMtNGQ4My1hMmE2LTY2MDRlYTAwZmUzZgACKlszLCIzNDc4YzVmOC00Yjg2LTRjOWUtYWIzYS1jOTg5YjNlNjgzZmMiXQAABiD4MNxqNGFpcDi8hSdeCkY3MlqQ5hROzxHCZz-Va5vfIg
+          packages_dir: custom-dir/
       
       # - name: package publish
       #   run: twine upload dist/*
+      
       
