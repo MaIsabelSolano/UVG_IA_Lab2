@@ -32,7 +32,10 @@ jobs:
         run: twine check dist/*
       
       - name: Publish package to TestPyPI
-        run: twine upload -r testpypi -u dacb15442 -p AMRD123IA --verbose dist/* 
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: dacb15442
+          password: AMRD123IA
       
       # - name: package publish
       #   run: twine upload dist/*
