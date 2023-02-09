@@ -32,7 +32,7 @@ jobs:
         run: twine check dist/*
       
       - name: Publish package to TestPyPI
-        run: twine upload -r testpypi -u dacb15442 -p AMRD123IA dist/* 
+        run: twine upload -r testpypi -u dacb15442 -p AMRD123IA --verbose dist/* 
       
       # - name: package publish
       #   run: twine upload dist/*
