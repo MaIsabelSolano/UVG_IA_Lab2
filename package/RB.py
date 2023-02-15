@@ -126,12 +126,12 @@ class RB:
               self.bayesiana.add_cpds(TabularCPD(y, 2, [normal, negado]))
         print("Red esta completamente descrita")
       except:
-        print("Red no esta completamente discreta")
+        print("Red no esta completamente descrita")
 
 
     def representacion(self):
       for key in self.complete:
-        print(key+": "+str(self.complete[key])+"\n")
+        print(key + ": " + str(self.complete[key]) + "\n")
   
     def factores(self):
       for test in self.bayesiana.get_cpds():
