@@ -18,7 +18,6 @@ class RB:
 
 
     def genRB(self, input):
-        
         df = pd.read_csv(input, sep = "=", header = None)
 
         for i in range(len(df[0])):
@@ -27,6 +26,15 @@ class RB:
             ] = df[1].__getitem__(i)
 
     def getEvent(self, E):
+        """
+            Parameters
+            ----------
+            - E: Event.
+            
+            Returns
+            -------
+            Event with the right structure.
+        """
         E_temp = str(E)
         E_temp = E_temp.replace("P(", "")
         E_temp = E_temp.replace(") ", "")
@@ -37,6 +45,15 @@ class RB:
         0
 
     def P(self, Event):
+        """
+            Parameters
+            ----------
+            - Event: Query.
+            
+            Returns
+            -------
+            - Query.
+        """
         # Find if self.data has already the query
         try:
             return self.data[Event]
@@ -45,6 +62,7 @@ class RB:
             print('No existe')
 
     def BayesPGM(self):
+        
       conexion = []
 
       for key in self.data:
@@ -140,5 +158,10 @@ class RB:
         print(test)
 
     def eliminacion(self, variable):
+      """
+        Parameters
+        ----------
+            - Variable: Variable to which the inference is going to be made.
+      """
       infer = VariableElimination(self.bayesiana)
       print(infer.query([variable]))
