@@ -5,7 +5,9 @@ from pgmpy.inference import VariableElimination
 import re
 from decimal import *
 
+#Se crea la clase
 class RB:
+    #Se definen las variables de data y red bayesiana
     def __init__(self, input):
         self.data = {}
         self.complete = {}
@@ -14,31 +16,30 @@ class RB:
 
         print(self.data)
 
-
+    #Se genera la red bayesiana y se guarda en data
     def genRB(self, input):
-        
         df = pd.read_csv(input, sep = "=", header = None)
-
         for i in range(len(df[0])):
             self.data[
                 self.getEvent(df[0].__getitem__(i))
             ] = df[1].__getitem__(i)
 
+    #Se toma un evento individual
     def getEvent(self, E):
         E_temp = str(E)
         E_temp = E_temp.replace("P(", "")
         E_temp = E_temp.replace(") ", "")
 
         return E_temp
-
+    
+    #Se lee un evento
     def readEvent(self): 
         pass
 
+    #Encontrar si la data tiene el query que se desea
     def P(self, Event):
-        # Find if self.data has already the query
         try:
             return self.data[Event]
-
         except:
             print('No existe')
 
@@ -56,6 +57,7 @@ class RB:
                       conexion.append(temp)
                   else:
                       continue
+
       self.bayesiana = None
       self.bayesiana = BayesianNetwork(conexion)
       p = self.bayesiana.nodes()
@@ -89,6 +91,7 @@ class RB:
                       m += q + ", "
                   if m[:-2] not in tent and m[:-2] != "":
                       tent.append(m[:-2])
+                    
       try:
         for y in p:
             normal = []
