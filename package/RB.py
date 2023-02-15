@@ -131,15 +131,17 @@ class RB:
         except:
             print("Red no esta completamente descrita")
 
-
+    #Funcion para representar el codigo
     def representacion(self):
       for key in self.complete:
         print(key + ": " + str(self.complete[key]) + "\n")
-  
+    
+    #Funcion para mostrar los factores de la red bayesiana
     def factores(self):
       for test in self.bayesiana.get_cpds():
         print(test)
 
+    #Funcion para eliminacion de variables
     def eliminacion(self, variable):
       infer = VariableElimination(self.bayesiana)
       print(infer.query([variable]))
