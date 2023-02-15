@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'Este packete permite escribir uyna red bayesiana en un archi
 
 # Setting up
 setup(
-    name="Bayes-IA-Lab2",
+    name="Lab2_IA",
     version=VERSION,
     author="Maria Isabel Solano,Roberto Vallecillos, Diego Cordova, Alejandro Gomez",
     description=DESCRIPTION,
