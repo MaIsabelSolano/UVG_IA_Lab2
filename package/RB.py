@@ -45,8 +45,6 @@ class RB:
 
     #Se realiza la funcion de Bayes
     def BayesPGM(self):
-      
-        #Se realiza la iteracion en las llaves de cada nodo de data
         conexion = []
         for key in self.data:
             m = ''.join(c for c in key if c.isalpha())
