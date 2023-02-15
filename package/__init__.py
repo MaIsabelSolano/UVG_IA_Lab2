@@ -1,2 +1,2 @@
-from RB import RB
-from toBayes import *
+from package.RB import RB
+from package.toBayes import *
