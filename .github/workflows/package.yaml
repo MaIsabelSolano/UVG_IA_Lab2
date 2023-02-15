@@ -31,13 +31,13 @@ jobs:
       - name: check build
         run: twine check dist/*
       
-      - name: Publish package to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: "pypi-AgEIcHlwaS5vcmcCJDVjYTMzYWIwLWVmODMtNGQ4My1hMmE2LTY2MDRlYTAwZmUzZgACKlszLCIzNDc4YzVmOC00Yjg2LTRjOWUtYWIzYS1jOTg5YjNlNjgzZmMiXQAABiD4MNxqNGFpcDi8hSdeCkY3MlqQ5hROzxHCZz-Va5vfIg"
-          packages_dir: dist
+      # - name: Publish package to PyPI
+      #   uses: pypa/gh-action-pypi-publish@release/v1
+      #   with:
+      #     password: "pypi-AgEIcHlwaS5vcmcCJDVjYTMzYWIwLWVmODMtNGQ4My1hMmE2LTY2MDRlYTAwZmUzZgACKlszLCIzNDc4YzVmOC00Yjg2LTRjOWUtYWIzYS1jOTg5YjNlNjgzZmMiXQAABiD4MNxqNGFpcDi8hSdeCkY3MlqQ5hROzxHCZz-Va5vfIg"
+      #     packages_dir: dist
       
-      # - name: package publish
-      #   run: twine upload dist/*
+      - name: package publish
+        run: twine upload dist/*
       
       
