@@ -34,7 +34,7 @@ jobs:
       - name: Publish package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: "${{ secrets.PYPI_USER PYPI_USER  }}"
+          user: "${{ secrets.PYPI_USER }}"
           password: "${{ secrets.PYPI_PASSWORD }}"
           packages_dir: dist
       
