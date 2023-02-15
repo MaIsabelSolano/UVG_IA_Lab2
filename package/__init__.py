@@ -1,3 +1,2 @@
-"""
-Agregar código que se desee poner en el paquete
-"""
+from RB import RB
+from toBayes import *
