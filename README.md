@@ -5,7 +5,7 @@ Laboratorio 2 de Inteligencia Artificial
 python setup.py sdist bdist_wheel
 
 ## Instrucciones de instalación:
-pip install dist/Lab2_IA-0.1.tar.gz
+pip install Lab2-IA==0.0.11
 
 ## Instrucciones de uso:
 Para poder utilizar este paquete, se debe de hacer lo siguiente. Se debe de tener un archivo de texto de la siguiente manera
