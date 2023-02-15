@@ -10,8 +10,6 @@ class RB:
         self.data = {}
         self.complete = {}
         self.bayesiana = None
-      
-
         self.genRB(input)
 
         print(self.data)
@@ -34,7 +32,7 @@ class RB:
         return E_temp
 
     def readEvent(self): 
-        0
+        pass
 
     def P(self, Event):
         # Find if self.data has already the query
