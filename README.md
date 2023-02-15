@@ -1,6 +1,8 @@
 # UVG_IA_Lab2
 Laboratorio 2 de Inteligencia Artificial
 
+PyPI: https://pypi.org/project/Lab2-IA/
+
 ## Instrucciones de empaquetamiento:
 python setup.py sdist bdist_wheel
 
