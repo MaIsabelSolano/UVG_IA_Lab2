@@ -2,6 +2,7 @@
 Laboratorio 2 de Inteligencia Artificial
 
 PyPI: https://pypi.org/project/Lab2-IA/
+PR Aprobada (0.5 pts extras!): https://github.com/SantiagoTaracena01/cool-bayesian-networks/pull/2
 
 ## Instrucciones de empaquetamiento:
 python setup.py sdist bdist_wheel
